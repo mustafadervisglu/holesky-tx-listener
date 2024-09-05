@@ -1,7 +1,8 @@
 # Derlenmiş dosyalar
 *.exe
 *.out
-
+# env
+.env
 # Modüller
 /vendor/
 
