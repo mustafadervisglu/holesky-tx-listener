@@ -29,5 +29,9 @@ func main() {
 	fmt.Println("Connected to db:", database)
 	fmt.Println("Connected to Ethereum client:", &newClient)
 	listener := ethereum.NewListener(newClient, database)
-	listener.Start()
+	batchSize := uint64(1000)
+	for {
+		listener.ProcessBlocks(batchSize)
+
+	}
 }

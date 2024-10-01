@@ -5,7 +5,8 @@
 .env
 # Modüller
 /vendor/
-
+go.mod
+go.sum
 # IDE ve sistem dosyaları
 .idea/
 .DS_Store
